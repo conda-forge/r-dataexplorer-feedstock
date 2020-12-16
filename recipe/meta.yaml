@@ -1,4 +1,4 @@
-{% set version = '0.8.1' %}
+{% set version = "0.8.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DataExplorer_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DataExplorer/DataExplorer_{{ version }}.tar.gz
-  sha256: 9f0d5028fac012b5a03d7d7fcd0d70e14cac7430532d891c13312cc1d9b3441c
+  sha256: 96aa1f0e7549dcc331e475a718bb72dac9ad85a4e6156121bedf6faca875a110
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -50,13 +50,11 @@ test:
 about:
   home: http://boxuancui.github.io/DataExplorer/
   license: MIT
-  summary: Automated data exploration process for analytic tasks and predictive modeling, so
-    that users could focus on understanding data and extracting insights. The package
-    scans and analyzes each variable, and visualizes them with typical graphical techniques.
-    Common data processing methods are also available to treat and format data.
+  summary: Automated data exploration process for analytic tasks and predictive modeling, so that users could focus on understanding data and extracting insights. The package scans and analyzes each variable, and visualizes them with typical graphical techniques. Common data processing methods are also available to treat
+    and format data.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
