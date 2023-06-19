@@ -1,11 +1,11 @@
-About r-dataexplorer
-====================
+About r-dataexplorer-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dataexplorer-feedstock/blob/main/LICENSE.txt)
 
 Home: http://boxuancui.github.io/DataExplorer/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dataexplorer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automated data exploration process for analytic tasks and predictive modeling, so that users could focus on understanding data and extracting insights. The package scans and analyzes each variable, and visualizes them with typical graphical techniques. Common data processing methods are also available to treat and format data.
 
