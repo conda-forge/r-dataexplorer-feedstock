@@ -1,4 +1,4 @@
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DataExplorer_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DataExplorer/DataExplorer_{{ version }}.tar.gz
-  sha256: 96aa1f0e7549dcc331e475a718bb72dac9ad85a4e6156121bedf6faca875a110
+  sha256: 1ea48bd204720792f7c8bb0ee53bf1131b2311c12515a480d201b99da5594085
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
